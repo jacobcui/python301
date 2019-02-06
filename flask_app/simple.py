@@ -1,6 +1,6 @@
 """A simple example explaining GET, POST.
 
-  Reference: http://flask.pocoo.org/docs/1.0/quickstart/#a-minimal-application
+  Reference: http://flask_app.pocoo.org/docs/1.0/quickstart/#a-minimal-application
 """
 
 from flask import Blueprint, render_template, request
