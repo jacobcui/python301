@@ -8,6 +8,7 @@ import simple
 app = Flask(__name__)
 
 app.config.from_pyfile('config.py', silent=True)
+
 app.register_blueprint(auth.bp)
 app.register_blueprint(blog.bp)
 app.register_blueprint(simple.bp)
@@ -20,6 +21,13 @@ db.init_app(app)
 # set FLASK_APP=server.py
 # set FLASK_ENV=development
 # Or if use pycharm, set these variables in run configuration.
+
+# To set up the database,
+# Right click this file, opens a terminal
+# In the command line, set the env variable:
+#   set FLASK_APP=server.py
+# Then run following command.
+#   flask init-db
 
 
 @app.route('/version', methods=['GET', 'POST'])
