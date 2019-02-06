@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+The current time is {{current_time}}. <p>
+
+    <ul>
+        {% for word in words %}
+            <li>The word is {{word}}</li>
+        {% endfor %}
+    </ul>
+
+<p>
+
+<table>
+    <thead>
+    <tr>
+        <td>Name</td><td>Title</td>
+    </tr>
+    </thead>
+    <tbody>
+    {# this is a comment line. #}
+    {# this is for a list of dicts #}
+    {% for stuff in stuff_list %}
+    <tr>
+        <td>{{stuff.name}}</td><td>{{stuff.title}}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
